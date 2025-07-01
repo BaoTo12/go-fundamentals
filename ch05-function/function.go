@@ -175,18 +175,18 @@ func modSlice(s []int) {
 // 	p.name = "Bob"
 // }
 
-func demonstrateDefer() {
-	fmt.Println("Function starts")
+// func demonstrateDefer() {
+// 	fmt.Println("Function starts")
 
-	defer fmt.Println("First defer - will run LAST")
-	defer fmt.Println("Second defer - will run second")
-	defer fmt.Println("Third defer - will run FIRST")
+// 	defer fmt.Println("First defer - will run LAST")
+// 	defer fmt.Println("Second defer - will run second")
+// 	defer fmt.Println("Third defer - will run FIRST")
 
-	fmt.Println("Function middle")
-	fmt.Println("Function about to return")
-	return
-	// Deferred functions run here, in reverse order
-}
+// 	fmt.Println("Function middle")
+// 	fmt.Println("Function about to return")
+// 	return
+// 	// Deferred functions run here, in reverse order
+// }
 
 func makeMul(base int) func(int) int {
 	return func(factor int) int {
